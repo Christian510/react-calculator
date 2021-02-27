@@ -15,7 +15,7 @@ class Calculate extends PureComponent {
 		return (
 			<div>
 				<button
-					className=""
+					className={this.props.className}
 					type="button"
 					onClick={this.handleClick}
 					name={this.props.name}

@@ -1,4 +1,5 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
+import '../Operator/operator.css';
 
 class Operator extends PureComponent {
 	constructor(props) {
@@ -13,7 +14,7 @@ class Operator extends PureComponent {
 	render() {
 		return (
 			<div>
-				<button className={this.props.button}
+				<button className={this.props.className}
 					disabled={this.props.disabled}
 					type="button"
 					onClick={this.handleClick}

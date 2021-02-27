@@ -28,9 +28,18 @@
 	width: 150px;
 }
 
-.button {
-	background-color: brown;
+.btn {
+	width: 5vh;
+	height: 5vh;
+}
+
+.operators {
+	background-color: red;
 	font-size: calc(5px + 2vmin);
+}
+
+.buttons {
+	background-color: slategrey;
 }
 
 .output {
