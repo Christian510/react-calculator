@@ -63,8 +63,8 @@ class App extends Component {
 				</header>
 				<div className="container">
 					<div className="calculator">
-						<div className="output" >
-							<Output output={output} />
+						<div>
+							<Output className="output" output={output} />
 						</div>
 						<div>
 							<div className="row">
@@ -92,7 +92,7 @@ class App extends Component {
 								<Operator className="btn operators" disabled={this.state.btnDisabled} handleOperator={this.handleOperator} name="subtract" value="-" display="-" />
 							</div>
 							<div className="row">
-								<Number className="btn" handleClicks={this.handleClicks} name="zero" value="0" />
+								<Number className="btn zero" handleClicks={this.handleClicks} name="zero" value="0" />
 								<Number className="btn" handleClicks={this.handleClicks} name="decimal" value="." />
 								<Calculate className="btn operators" handleCalculation={this.handleCalculation} name="equals" value="=" display="=" />
 							</div>

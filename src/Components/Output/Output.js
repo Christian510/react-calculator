@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Output({output}) {
+function Output({output, className}) {
 	return (
-		<div>
+		<div className={className}>
 			{output}
 		</div>
 	)
