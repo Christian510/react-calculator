@@ -15,7 +15,7 @@ class Number extends PureComponent {
 	render() {
 		return (
 			<div>
-				<button className=""
+				<button className={this.props.button}
 								type="button"
 								onClick = {this.handleClick}
 								name={this.props.name}

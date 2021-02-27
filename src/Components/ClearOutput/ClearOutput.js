@@ -14,7 +14,7 @@ class ClearOutput extends PureComponent {
 		return (
 			<div>
 			<button
-				className=""
+				className={this.props.button}
 				type="button"
 				onClick={this.handleClick}
 				name={this.props.name}>{this.props.display}</button>

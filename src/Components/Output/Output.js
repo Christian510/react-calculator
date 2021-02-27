@@ -1,14 +1,11 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 
-class Evaluator extends PureComponent {
-	render() {
-
-		return (
-			<div>
-					{this.props.output}
-			</div>
-		)
-	}
+function Output({output}) {
+	return (
+		<div>
+			{output}
+		</div>
+	)
 }
 
-export default Evaluator
+export default Output

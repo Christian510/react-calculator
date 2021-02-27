@@ -7,21 +7,17 @@ class Operator extends PureComponent {
 	}
 
 	handleClick(e) {
-		// Write a function that allows for one click to add the operator to evaluation
-		// But, prevents consecutive clicks
-		// And, can only be clicked again once a number had been clicked.
 		this.props.handleOperator(e.target.value);
 	}
 
 	render() {
 		return (
 			<div>
-				<button 
-					className=""
+				<button className={this.props.button}
 					disabled={this.props.disabled}
-					type="button" 
+					type="button"
 					onClick={this.handleClick}
-					name={this.props.name} 
+					name={this.props.name}
 					value={this.props.value}>{this.props.display}</button>
 			</div>
 		)
